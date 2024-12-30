@@ -228,7 +228,28 @@ html {
 
 .panel.left {
     margin-top: 50px;
+    margin-left: 20px;
     width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 5px;
+}
+
+.box {
+    width: 90%;
+    height: 90%;
+    border: 3px solid var(--offwhite);
+    border-radius: 15px;
+    transition: 500ms linear;
+    background-color: var(--accent3);
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.box:hover {
+    box-shadow: var(--offblack) 10px 10px;
 }
 
 .panel.right {

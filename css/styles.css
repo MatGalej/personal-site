@@ -195,7 +195,7 @@ html {
 
 #about-me-panel {
     margin-top: 25vh;
-    height: 100vh;
+    height: 100vh; /* TEMP */
 }
 
 #about-me {

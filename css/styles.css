@@ -189,19 +189,41 @@ html {
     transform: translateY(-2px);
 }
 
-#background-2 {
-    z-index: -1;
-    top: 100vh;
-    background: linear-gradient(315deg, rgba(2,0,36,0.9164915966386554) 0%, rgba(50,54,61,1) 86%);
-    position: absolute;
-    width: 100%;
-    min-height: 100vh;
+#about-me-panel {
+    margin-top: 25vh;
+    height: 100vh;
 }
 
 #about-me {
+    color: var(--offwhite);
     font-family: "Oswald", sans-serif;
     text-align: center;
-    margin-top: 20px;
-    font-size: 3rem;
+    font-size: 4rem;
+}
+
+#about-me-subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    color: var(--accent1);
+}
+
+.panel.left {
+    width: 50%;
+}
+
+.panel.right {
+    margin-top: 50px;
+    margin-left: 60%;
+    width: 40%;
+}
+
+#personal-bio {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.9rem;
+    font-size: 1.3rem;
     color: var(--offwhite);
 }

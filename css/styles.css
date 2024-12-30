@@ -12,8 +12,12 @@
 /* Global colors */
 :root {
     --offwhite: #FAF9F6;
-    --accent1: cadetblue;
-    --accent2: dimgrey;
+    --accent1: #1a71a3;
+    --accent2: #486078FF;
+    --accent3: #484860FF;
+    --accent4: #D8D8D8FF;
+    --offblack: #181830FF;
+    --charcoal: #444444;
 }
 
 * {
@@ -143,6 +147,39 @@ html {
     color: var(--accent1);
 }
 
-#opening-text button {
 
+#opening-text #resume-download {
+    margin-top: 50px;
+    width: 70%;
+    height: 12%;
+    border-radius: 40px;
+    border: none;
+    color: var(--offwhite);
+    background-color: var(--accent1);
+    transition: 300ms ease;
+    background-size: 200%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#opening-text #resume-download:hover {
+    background-color: var(--offblack);
+}
+
+#opening-text #resume-download:active {
+    background-color: var(--accent3);
+}
+
+#opening-text #icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
 }

@@ -32,7 +32,7 @@ html {
 
 #background {
     z-index: -1;
-    background: linear-gradient(315deg, rgba(2,0,36,0.92) 0%, rgba(28,83,98,1) 86%);
+    background: linear-gradient(315deg, rgba(2, 0, 36, 0.92) 0%, rgba(28, 83, 98, 1) 86%);
     position: absolute;
     width: 100%;
     min-height: 100vh;
@@ -163,8 +163,17 @@ html {
     cursor: pointer;
 }
 
+#button-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 #opening-text #resume-download #download-icon {
-    height: 20px;
+    height: 16px;
 }
 
 #opening-text #resume-download:hover {
@@ -198,6 +207,11 @@ html {
     height: 100vh; /* TEMP */
 }
 
+#panel-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 #about-me {
     color: var(--offwhite);
     font-family: "Oswald", sans-serif;
@@ -213,13 +227,12 @@ html {
 }
 
 .panel.left {
-    width: 50%;
-    display: grid;
+    margin-top: 50px;
+    width: 60%;
 }
 
 .panel.right {
     margin-top: 50px;
-    margin-left: 60%;
     width: 40%;
 }
 

@@ -182,4 +182,26 @@ html {
 .icon {
     width: 36px;
     height: 36px;
+    transition: 500ms ease;
+}
+
+.icon:hover {
+    transform: translateY(-2px);
+}
+
+#background-2 {
+    z-index: -1;
+    top: 100vh;
+    background: linear-gradient(315deg, rgba(2,0,36,0.9164915966386554) 0%, rgba(50,54,61,1) 86%);
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#about-me {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3rem;
+    color: var(--offwhite);
 }

@@ -233,21 +233,30 @@ html {
     color: var(--offwhite);
 }
 
-#contact-link {
+@keyframes link-hover {
+    0% {
+        color: var(--accent1);
+    }
+    100% {
+        color: var(--accent3);
+    }
+}
+
+.text-animation {
     position: relative;
     text-decoration: none;
     color: var(--accent1);
 }
 
-#contact-link:hover {
-    animation-name: contact-link-hover;
+.text-animation:hover {
+    animation-name: link-hover;
     animation-duration: 300ms;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     color: var(--accent3);
 }
 
-#contact-link::after {
+.text-animation::after {
     content: "";
     position: absolute;
     left: 0;
@@ -258,15 +267,6 @@ html {
     transition: width 0.5s ease;
 }
 
-@keyframes contact-link-hover {
-    0% {
-        color: var(--accent1);
-    }
-    100% {
-        color: var(--accent3);
-    }
-}
-
-#contact-link:hover::after {
+.text-animation:hover::after {
     width: 100%;
 }

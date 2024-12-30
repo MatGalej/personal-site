@@ -63,10 +63,10 @@ html {
 }
 
 .nav-item {
-    position: relative; /* Needed for the positioning of ::after */
-    display: inline-block; /* Allows consistent spacing */
+    position: relative;
+    display: inline-block;
     text-decoration: none;
-    color: white; /* Set your desired text color */
+    color: white;
     font-size: 1.5rem;
 }
 
@@ -163,6 +163,10 @@ html {
     cursor: pointer;
 }
 
+#opening-text #resume-download #download-icon {
+    height: 20px;
+}
+
 #opening-text #resume-download:hover {
     background-color: var(--offblack);
 }
@@ -210,6 +214,7 @@ html {
 
 .panel.left {
     width: 50%;
+    display: grid;
 }
 
 .panel.right {
@@ -226,4 +231,42 @@ html {
     line-height: 1.9rem;
     font-size: 1.3rem;
     color: var(--offwhite);
+}
+
+#contact-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--accent1);
+}
+
+#contact-link:hover {
+    animation-name: contact-link-hover;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    color: var(--accent3);
+}
+
+#contact-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: var(--offwhite);
+    transition: width 0.5s ease;
+}
+
+@keyframes contact-link-hover {
+    0% {
+        color: var(--accent1);
+    }
+    100% {
+        color: var(--accent3);
+    }
+}
+
+#contact-link:hover::after {
+    width: 100%;
 }

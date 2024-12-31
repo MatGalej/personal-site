@@ -119,6 +119,7 @@ html {
 #opening-panel {
     display: flex;
     text-align: center;
+    justify-content: center;
 }
 
 .section-panel {
@@ -130,7 +131,6 @@ html {
     height: 400px;
     border: 3px solid white;
     border-radius: 15%;
-    margin-left: 15%;
 }
 
 #front-image {
@@ -332,9 +332,9 @@ html {
 }
 
 #experience-inner-panel {
-    padding: 0;
+    padding: 10px;
     width: 90%;
-    height: 500px;
+    height: 600px;
     margin: 20px auto;
     display: flex;
     justify-content: center;

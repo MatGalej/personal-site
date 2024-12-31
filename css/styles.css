@@ -346,7 +346,47 @@ html {
     height: 100%;
     width: 30%;
     background-color: var(--offblack);
+    padding: 50px 20px 50px 20px;
     border-radius: 15px 0 0 15px;
+}
+#nav-panel-list {
+    list-style-type: none;
+    width: 100%;
+}
+
+#nav-panel-list li > button {
+    width: 100%;
+    background: inherit;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--offwhite);
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+#nav-panel-list li:not(#nav-panel-list li:last-of-type) {
+    margin-bottom: 10px
+}
+
+#nav-panel-list li:hover {
+    border: 1px solid var(--offwhite);
+}
+
+.alternate-background {
+    background-color: var(--accent5);
+}
+
+.card {
+    display: none;
+}
+
+.card.active {
+    display: block;
 }
 
 .panel-border {
@@ -380,22 +420,23 @@ html {
     gap: 10px;
     font-family: "Oswald", sans-serif;
     color: var(--offwhite);
+    transition: 500ms ease;
 }
 
 #contact-list li span {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .icon-large {
     width: 50px;
     height: 50px;
     vertical-align: middle;
-    transition: 500ms ease;
     object-fit: contain;
 }
 
-.icon-large:hover {
+#contact-list li:hover {
     transform: translateY(-5px);
 }
 

@@ -111,6 +111,10 @@ html {
     text-align: center;
 }
 
+.section-panel {
+    margin-top: 25vh;
+}
+
 #pfp-box {
     width: 400px;
     height: 400px;
@@ -146,7 +150,6 @@ html {
     font-family: "Raleway", sans-serif;
     color: var(--accent1);
 }
-
 
 #opening-text #resume-download {
     margin-top: 50px;
@@ -202,10 +205,6 @@ html {
     transform: translateY(-2px);
 }
 
-#about-me-panel {
-    margin-top: 25vh;
-}
-
 #panel-wrapper {
     display: flex;
     justify-content: space-between;
@@ -240,20 +239,27 @@ html {
     height: 90%;
     border: 3px solid var(--offwhite);
     border-radius: 15px;
-    transition: 500ms linear;
-    background-color: var(--accent3);
+    transition: 200ms linear;
+    background-color: var(--accent2);
     font-family: "Raleway", sans-serif;
     text-align: center;
     padding: 10px;
+    margin-bottom: 0;
 }
 
 .box:hover {
     box-shadow: var(--offblack) 10px 10px;
+    transform: translateY(-2px);
 }
 
 .panel.right {
     margin-top: 50px;
     width: 40%;
+}
+
+.box-icon {
+    width: 15%;
+    height: 15%;
 }
 
 #personal-bio {
@@ -302,12 +308,4 @@ html {
 
 .text-animation:hover::after {
     width: 100%;
-}
-
-
-
-
-#experience-panel {
-    margin-top: 25vh;
-    height: 100vh;
 }

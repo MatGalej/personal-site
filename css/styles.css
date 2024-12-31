@@ -62,6 +62,15 @@ html {
     width: 500px;
 }
 
+#footer-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "Oswald", sans-serif;
+    color: var(--offblack);
+}
+
 .nav-item {
     position: relative;
     display: inline-block;
@@ -308,4 +317,25 @@ html {
 
 .text-animation:hover::after {
     width: 100%;
+}
+
+#page-footer {
+    margin-top: 25vh;
+    border-top: 3px solid var(--accent1);
+    background-color: var(--offblack);
+    bottom: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#page-footer p {
+    margin-top: 15px;
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    color: var(--offwhite);
+    font-size: 12px;
 }

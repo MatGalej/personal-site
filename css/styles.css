@@ -48,6 +48,7 @@ html {
     padding-left: 50px;
     padding-right: 20px;
     color: var(--offwhite);
+    scroll-margin-top: 0;
 }
 
 #page-header #name {

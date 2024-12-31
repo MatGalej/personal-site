@@ -30,6 +30,7 @@
                     <h3>Hi, I am</h3>
                     <h1>Matthew Galej</h1>
                     <h2>CS Student @ Purdue University</h2>
+
                     <button id="resume-download"
                             onclick="window.open('../assets/RESUME%20-%20MATTHEW%20GALEJ.pdf', '_blank')">
                         <div id="button-text">
@@ -53,6 +54,7 @@
         <div class="section-panel">
             <h1 id="about-me" class="section-header">About Me</h1>
             <p class="section-subtitle">And My Passion for Computer Science!</p>
+
             <div id="panel-wrapper">
                 <div class="panel left">
                     <div class="box">
@@ -104,7 +106,11 @@
         <div class="section-panel">
             <h1 id="my-experience" class="section-header">My Experience</h1>
             <p class="section-subtitle">A brief overlook on my technical history</p>
+
             <div id="experience-inner-panel">
+                <div id="nav-panel"></div>
+                <div class="panel-border"></div>
+                <div id="content-panel"></div>
             </div>
         </div>
         <div class="section-panel">
@@ -114,6 +120,25 @@
         <div class="section-panel">
             <h1 id="contact-info" class="section-header">Contact Info</h1>
             <p class="section-subtitle">Lets chat!</p>
+
+            <ul id="contact-list">
+                <li>
+                    <a target="_blank" href="https://github.com/MatGalej">
+                                <img class="icon-large" src="../assets/github-icon.svg" alt="github" /></a>
+                    <span>Github</span>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/matthew-galej-61bb95263/">
+                                <img class="icon-large" src="../assets/linkedin-icon.svg" alt="linkedin" /></a>
+                    <span>Linkedin</span>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:mgalej@purdue.edu">
+                        <img class="icon-large" src="../assets/email-icon.svg" alt="email" />
+                    </a>
+                    <span>Email</span>
+                </li>
+            </ul>
         </div>
 
         <footer id="page-footer">
@@ -124,7 +149,8 @@
                 <a class="nav-item" href="#my-projects">My Projects</a>
                 <a class="nav-item" href="#contact-info">Contact Info</a>
             </nav>
-            <p>Copyright &copy Matthew Galej 2025. All rights reserved.</p>
+            <p>Copyright &copy Matthew Galej
+                <script>document.write(new Date().getFullYear())</script>. All rights reserved.</p>
         </footer>
     </div>
 </main>

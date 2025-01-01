@@ -377,6 +377,10 @@ html {
     border: 1px solid var(--offwhite);
 }
 
+#nav-panel-list li > button.active {
+    border: 1px solid var(--offwhite);
+}
+
 .alternate-background {
     background-color: var(--accent5);
 }
@@ -418,12 +422,65 @@ html {
 }
 
 .project-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 400px;
     height: 400px;
     border-radius: 15px;
+    padding: 10px;
     border: 3px solid var(--offwhite);
     background-color: var(--offblack);
+    font-family: "Oswald", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: var(--offwhite);
     transition: 200ms linear;
+}
+
+.project-box h1 {
+    margin: 5px;
+}
+
+.project-image {
+    width: 90%;
+    background-color: var(--offwhite);
+    height: 65%;
+    border: 3px solid var(--offwhite);
+    border-radius: 15px;
+}
+
+.project-box.upcoming {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-button {
+    width: 90%;
+    height: 30px;
+    border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+    color: var(--offwhite);
+    border: none;
+    transition: 300ms ease;
+}
+
+.project-button.color1 {
+    background-color: var(--accent1);
+}
+
+.project-button.color1:hover {
+
+}
+
+.project-button.color2 {
+    background-color: var(--accent5);
+}
+
+.project-button:not(.project-button.bottom) {
+    margin-bottom: 10px;
 }
 
 .project-box:hover {

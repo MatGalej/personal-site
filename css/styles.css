@@ -343,8 +343,6 @@ html {
     height: 600px;
     margin: 50px auto auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     border: 3px solid var(--offwhite);
     border-radius: 15px;
 }
@@ -404,7 +402,24 @@ html {
     justify-content: center;
 }
 
-/* The various cards */
+.card.active#research {
+    display: flex;
+    flex-direction: column;
+}
+
+#research {
+    color: var(--offwhite);
+    font-family: "Raleway", sans-serif;
+}
+
+#research h1 {
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 20px;
+}
+
+#research p {
+    margin-bottom: 10px;
+}
 
 .image {
     height: 100%;
@@ -419,7 +434,6 @@ html {
 .image img {
     width: 50%;
     height: 50%;
-    object-fit: cover;
 }
 
 .image p {
@@ -454,7 +468,11 @@ html {
     border-radius: 0 15px 15px 0;
 }
 
-/* End of cards*/
+#card-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 
 .panel-border {
     height: 100%;

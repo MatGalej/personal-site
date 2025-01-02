@@ -18,6 +18,7 @@
     --accent3: #484860FF;
     --accent4: #D8D8D8FF;
     --accent5: #2A3D4FFF;;
+    --accent6: #B8A894FF
 }
 
 * {
@@ -176,7 +177,7 @@ html {
     cursor: pointer;
 }
 
-#button-text {
+.button-text {
     width: 100%;
     height: 100%;
     display: flex;
@@ -443,11 +444,17 @@ html {
     margin: 5px;
 }
 
-.project-image {
+.project-image-border {
     width: 90%;
     background-color: var(--offwhite);
     height: 65%;
     border: 3px solid var(--offwhite);
+    border-radius: 15px;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
 }
 
@@ -472,11 +479,15 @@ html {
 }
 
 .project-button.color1:hover {
-
+    background-color: var(--accent6);
 }
 
 .project-button.color2 {
     background-color: var(--accent5);
+}
+
+.project-button.color2:hover {
+    background-color: var(--accent2);
 }
 
 .project-button:not(.project-button.bottom) {
@@ -486,6 +497,10 @@ html {
 .project-box:hover {
     box-shadow: var(--accent1) 10px 10px;
     transform: translateY(-2px);
+}
+
+.project-icon {
+    height: 18px;
 }
 
 #contact-list {

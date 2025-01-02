@@ -253,9 +253,10 @@ html {
     transition: 200ms linear;
     background-color: var(--accent2);
     font-family: "Raleway", sans-serif;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     margin-bottom: 0;
+    color: var(--offwhite);
 }
 
 .box:hover {
@@ -281,7 +282,6 @@ html {
 }
 
 .box-contents ul {
-    color: var(--offwhite);
     list-style: circle inside;
 }
 

@@ -263,11 +263,6 @@ html {
     transform: translateY(-2px);
 }
 
-.panel.right {
-    margin-top: 50px;
-    width: 40%;
-}
-
 .box-top-header {
     display: flex;
     justify-content: center;
@@ -282,6 +277,15 @@ html {
 .box-icon {
     width: 8%;
     height: 8%;
+}
+
+.box-contents {
+    color: var(--offwhite);
+}
+
+.panel.right {
+    margin-top: 50px;
+    width: 40%;
 }
 
 #personal-bio {
@@ -350,6 +354,7 @@ html {
     padding: 50px 20px 50px 20px;
     border-radius: 15px 0 0 15px;
 }
+
 #nav-panel-list {
     list-style-type: none;
     width: 100%;
@@ -391,7 +396,21 @@ html {
 }
 
 .card.active {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The various cards */
+
+#card-1 {
+    gap: 18%;
+    align-items: center;
+}
+
+#card-1 img {
+    width: 18%;
 }
 
 .panel-border {
@@ -400,7 +419,7 @@ html {
     background-color: var(--accent1);
 }
 
-#experience-inner-panel #content-panel {
+#content-panel {
     height: 100%;
     width: 70%;
     background-color: var(--accent5);

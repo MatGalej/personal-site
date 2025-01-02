@@ -268,6 +268,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .box-top-header p {
@@ -279,8 +280,9 @@ html {
     height: 8%;
 }
 
-.box-contents {
+.box-contents ul {
     color: var(--offwhite);
+    list-style: circle inside;
 }
 
 .panel.right {
@@ -402,16 +404,50 @@ html {
     justify-content: center;
 }
 
+.card.active .image {
+    margin-top: -5%;
+}
+
 /* The various cards */
 
-#card-1 {
-    gap: 18%;
+.image {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-#card-1 img {
+.image img {
+    width: 50%;
+}
+
+.image p {
+    color: var(--offwhite);
+    margin-top: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+.level-bar {
+    margin-top: 20px;
+    border: 2px solid var(--offwhite);
+    border-radius: 50px;
+    width: 80%;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#card-2 {
+    gap: 18%;
+}
+
+#card-2 img {
     width: 18%;
 }
+
+/* End of cards*/
 
 .panel-border {
     height: 100%;
@@ -425,14 +461,19 @@ html {
     background-color: var(--accent5);
     border-radius: 0 15px 15px 0;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #project-box-wrapper {
     margin: 50px 20px auto;
     display: grid;
     gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    max-width: 100%;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);
 }
 
 #flex-box-wrapper {

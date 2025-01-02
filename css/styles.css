@@ -404,10 +404,6 @@ html {
     justify-content: center;
 }
 
-.card.active .image {
-    margin-top: -5%;
-}
-
 /* The various cards */
 
 .image {
@@ -421,6 +417,7 @@ html {
 
 .image img {
     width: 50%;
+    height: 50%;
 }
 
 .image p {
@@ -439,12 +436,20 @@ html {
     justify-content: space-evenly;
 }
 
-#card-2 {
-    gap: 18%;
+.level-bar div:not(.level-bar div.panel-border-bar) {
+    width: 100%;
 }
 
-#card-2 img {
-    width: 18%;
+.filled {
+    background-color: var(--accent6);
+}
+
+.filled.start {
+    border-radius: 15px 0 0 15px;
+}
+
+.filled.end {
+    border-radius: 0 15px 15px 0;
 }
 
 /* End of cards*/
@@ -453,6 +458,12 @@ html {
     height: 100%;
     width: 3px;
     background-color: var(--accent1);
+}
+
+.panel-border-bar {
+    height: 100%;
+    width: 8px;
+    background-color: var(--offblack);
 }
 
 #content-panel {

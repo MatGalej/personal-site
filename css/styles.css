@@ -123,8 +123,12 @@ html {
     justify-content: center;
 }
 
+.section-panel:not(.section-panel:last-of-type) {
+   min-height: 100vh;
+}
+
 .section-panel {
-    margin-top: 20vw;
+    margin-top: 10vh;
 }
 
 #pfp-box {

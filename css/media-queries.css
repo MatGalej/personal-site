@@ -34,6 +34,7 @@
     /* About Section */
 
     #panel-wrapper {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -41,14 +42,15 @@
 
     .panel.right {
         width: 100%;
+        margin: auto;
         text-align: center;
     }
 
     .panel.left {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        gap: 20px;
     }
 
     .box {

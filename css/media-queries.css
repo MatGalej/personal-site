@@ -67,4 +67,8 @@
     #project-box-wrapper {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+
+    #footer-navbar { /* TODO: FIX SCALING */
+        flex-direction: column;
+    }
 }

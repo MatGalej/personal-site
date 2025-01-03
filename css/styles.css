@@ -25,7 +25,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
+    outline: 1px solid red; /* TODO: DEBUG */
 }
 
 html {
@@ -76,15 +76,6 @@ html {
 
 #hamburger-menu:hover {
     box-shadow: 2px 2px var(--offblack);
-}
-
-#footer-navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    font-family: "Oswald", sans-serif;
-    color: var(--offblack);
 }
 
 .nav-item {
@@ -658,7 +649,9 @@ html {
     transform: translateY(-5px);
 }
 
+
 #page-footer {
+    position: relative;
     margin-top: 10vh;
     border-top: 3px solid var(--accent1);
     background-color: var(--offblack);
@@ -669,6 +662,15 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+#footer-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "Oswald", sans-serif;
+    color: var(--offblack);
 }
 
 #page-footer p {

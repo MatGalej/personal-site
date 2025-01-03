@@ -68,7 +68,12 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
-    #footer-navbar { /* TODO: FIX SCALING */
+    #footer-navbar {
         flex-direction: column;
+        gap: 10px;
+    }
+
+    #page-footer p {
+        font-size: 8px;
     }
 }

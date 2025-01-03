@@ -53,11 +53,6 @@ html {
     scroll-margin-top: 0;
 }
 
-#page-header #name {
-    font-size: 3rem;
-    user-select: none;
-}
-
 #navbar {
     display: flex;
     justify-content: space-evenly;
@@ -161,7 +156,7 @@ html {
 }
 
 #opening-text h1 {
-    font-size: 6rem;
+    font-size: clamp(2rem, 10vw, 6rem);
     font-family: "Oswald", sans-serif;
     color: var(--offwhite);
 }
@@ -653,10 +648,11 @@ html {
 #page-footer {
     position: relative;
     margin-top: 10vh;
+    padding: 15px;
     border-top: 3px solid var(--accent1);
     background-color: var(--offblack);
     bottom: 0;
-    height: 100px;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;

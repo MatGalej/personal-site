@@ -1,7 +1,7 @@
+// Button logic for the experience nav panel
 const buttons = document.querySelectorAll("button");
 const cards = document.querySelectorAll(".card");
 
-// Add click event listeners to each button
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
         buttons.forEach((btn) => btn.classList.remove("active"));
@@ -17,12 +17,23 @@ buttons.forEach((button) => {
     });
 });
 
+// Mobile hamburger menu for the experience panel
+const experienceHamburgerMenu = document.getElementById("content-panel-hamburger-menu");
+const experienceNavbar = document.getElementById("experience-nav-panel-hamburger");
+
+experienceHamburgerMenu.addEventListener("click", () => {
+    experienceNavbar.classList.toggle("show");
+});
+
+
+
+
+// Top nav hamburger menu
 const hamburgerMenu = document.getElementById("hamburger-icon");
-const hamburgerIcon = document.getElementById("hamburger-icon")
 const navbar = document.getElementById("hamburger-navbar");
 
 hamburgerMenu.addEventListener("click", () => {
-    navbar.classList.toggle("show"); // Add/remove the "show" class
+    navbar.classList.toggle("show"); 
 });
 
 const observer = new IntersectionObserver((entries) => {
@@ -34,4 +45,4 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-observer.observe(hamburgerIcon);
+observer.observe(hamburgerMenu);

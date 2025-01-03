@@ -363,12 +363,16 @@ html {
     border-radius: 15px 0 0 15px;
 }
 
-#nav-panel-list {
+#experience-nav-panel-hamburger {
+    display: none;
+}
+
+#nav-panel-list, #experience-nav-panel-hamburger {
     list-style-type: none;
     width: 100%;
 }
 
-#nav-panel-list li > button {
+#nav-panel-list li > button, #experience-nav-panel-hamburger li > button {
     width: 100%;
     background: inherit;
     border: none;
@@ -417,6 +421,7 @@ html {
 .card.active#research {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 #research {

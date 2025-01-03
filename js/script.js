@@ -16,3 +16,11 @@ buttons.forEach((button) => {
         }
     });
 });
+
+// Hamburger menu and the navbar
+const hamburgerMenu = document.getElementById("hamburger-menu");
+const navbar = document.getElementById("navbar");
+
+hamburgerMenu.addEventListener("click", () => {
+    navbar.classList.toggle("show"); // Add/remove the "show" class
+});

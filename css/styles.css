@@ -66,6 +66,15 @@ html {
 
 #hamburger-menu {
     display: none;
+    transition: 200ms ease;
+}
+
+#navbar.show {
+    display: flex;
+}
+
+#hamburger-menu:hover {
+    box-shadow: 2px 2px var(--offblack);
 }
 
 #footer-navbar {

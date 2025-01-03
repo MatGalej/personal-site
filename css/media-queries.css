@@ -48,7 +48,11 @@
 
     .panel.left {
         display: flex;
+        margin-left: 0;
+        width: 100%;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 50px;
         gap: 20px;
     }

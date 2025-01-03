@@ -1,4 +1,0 @@
-TODO:
-- Make the site responsive for mobile devices
-    - Change the boxes to scale properly
-    - Make text adapt to different screen resolutions

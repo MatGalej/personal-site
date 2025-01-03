@@ -1,0 +1,193 @@
+@media screen and (max-width: 768px) {
+    #opening-panel {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #opening-text {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #resume-download {
+        width: 100%;
+    }
+
+    #pfp-box {
+        width: 90%;
+    }
+
+    #pfp-box {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #contact-list {
+        flex-direction: column;
+    }
+
+    /* Hamburger menu / Navbar */
+    #hamburger-navbar, #navbar {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: flex;
+        max-height: 75px;
+        min-height: 50px;
+        height: 10vw;
+    }
+
+    #hamburger-navbar.show {
+        display: flex;
+        border-top: 3px solid var(--offwhite);
+        opacity: 0.95;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 20px;
+        width: 100%;
+        left: 0;
+        padding: 20px;
+        min-height: 200px;
+        background-color: var(--offblack);
+    }
+
+    #hamburger-navbar a {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    #page-header {
+        justify-content: flex-end;
+    }
+
+    /* Experience Section */
+    #experience-inner-panel #nav-panel, #experience-inner-panel .panel-border {
+        display: none;
+    }
+
+    #content-panel-hamburger-menu {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    #content-panel-hamburger-menu #experience-hamburger-icon {
+        width: 10vw;
+        min-width: 40px;
+        max-width: 60px;
+        transition: 200ms ease;
+    }
+
+    #experience-hamburger-icon:hover {
+        box-shadow: 2px 2px var(--offblack);
+    }
+
+    #experience-nav-panel-hamburger li > button {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    #experience-nav-panel-hamburger {
+        display: none;
+    }
+
+    #experience-nav-panel-hamburger.show {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.95;
+        position: absolute;
+        top: 90px;
+        background-color: var(--offblack);
+        border-top: 3px solid var(--offwhite);
+        padding: 20px;
+    }
+
+    #content-panel {
+        position: relative;
+        width: 100%;
+        border-radius: 15px;
+        overflow: scroll;
+        scrollbar-color: var(--accent6) var(--offblack);
+    }
+
+    /* About Section */
+    #panel-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .panel.right {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .panel.left {
+        display: flex;
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        gap: 20px;
+    }
+
+    .box {
+        text-align: center;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    #project-box-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    #footer-navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #card-grid-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        margin-top: 200px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    /* Text resizing */
+    #page-footer p {
+        font-size: 10px;
+    }
+
+    #footer-navbar {
+        width: 100%;
+    }
+
+    .section-header {
+        font-size: 2.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    #personal-bio {
+        font-size: 0.8rem;
+    }
+}

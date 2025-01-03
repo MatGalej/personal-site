@@ -4,4 +4,12 @@
         align-items: center;
         justify-content: center;
     }
+    #opening-text {
+        margin-left: 0;
+    }
+
+    #contact-list {
+        flex-direction: column;
+    }
+
 }

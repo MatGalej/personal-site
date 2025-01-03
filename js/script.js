@@ -25,7 +25,14 @@ experienceHamburgerMenu.addEventListener("click", () => {
     experienceNavbar.classList.toggle("show");
 });
 
+const hamburgerButtons = document.querySelectorAll
+("#experience-nav-panel-hamburger li > button");
 
+hamburgerButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        experienceNavbar.classList.toggle("show");
+    });
+});
 
 
 // Top nav hamburger menu
@@ -41,8 +48,10 @@ const observer = new IntersectionObserver((entries) => {
         if (!entry.isIntersecting) {
             // Hamburger menu is not visible, hide the navbar
             navbar.classList.remove("show");
+            experienceNavbar.classList.remove("show");
         }
     });
 });
 
 observer.observe(hamburgerMenu);
+observer.observe(experienceHamburgerMenu)

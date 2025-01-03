@@ -4,12 +4,54 @@
         align-items: center;
         justify-content: center;
     }
+
     #opening-text {
         margin-left: 0;
+        margin-right: 0;
+    }
+
+    #pfp-box {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #contact-list {
         flex-direction: column;
     }
 
+    /* Hamburger menu / Navbar */
+    #navbar {
+        display: none;
+    }
+    #hamburger-menu {
+        display: flex;
+        height: 50%;
+    }
+    #page-header {
+        justify-content: flex-end;
+    }
+
+    /* About Section */
+
+    #panel-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .panel.right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .panel.left {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .box {
+        text-align: center;
+    }
 }

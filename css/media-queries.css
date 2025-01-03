@@ -8,6 +8,15 @@
     #opening-text {
         margin-left: 0;
         margin-right: 0;
+        width: 100%;
+    }
+
+    #resume-download {
+        width: 100%;
+    }
+
+    #pfp-box {
+        width: 90%;
     }
 
     #pfp-box {
@@ -20,16 +29,55 @@
     }
 
     /* Hamburger menu / Navbar */
-    #navbar {
+    #hamburger-navbar, #navbar {
         display: none;
     }
-    #hamburger-menu {
+    #hamburger-icon {
         display: flex;
-        height: 50%;
+        max-height: 75px;
+        min-height: 50px;
+        height: 10vw;
+    }
+    #hamburger-navbar.show {
+        display: flex;
+        border-top: 3px solid var(--offwhite);
+        opacity: 0.95;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 20px;
+        width: 100%;
+        left: 0;
+        padding: 10px;
+        min-height: 200px;
+        background-color: var(--offblack);
     }
     #page-header {
         justify-content: flex-end;
     }
+
+    /* Experience Section */
+    #experience-inner-panel #nav-panel, #experience-inner-panel .panel-border {
+        display: none;
+    }
+
+    #content-panel-hamburger-menu {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 50px;
+    }
+
+    #content-panel-hamburger-menu img {
+        width: 10%;
+    }
+
+    #content-panel {
+        width: 100%;
+        border-radius: 15px;
+    }
+
 
     /* About Section */
 
@@ -61,6 +109,7 @@
         text-align: center;
         margin: 0;
     }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -73,7 +122,25 @@
         gap: 10px;
     }
 
+    /* Text resizing */
+
     #page-footer p {
-        font-size: 8px;
+        font-size: 10px;
+    }
+
+    #footer-navbar {
+        width: 100%;
+    }
+
+    .section-header {
+        font-size: 2.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    #personal-bio {
+        font-size: 0.8rem;
     }
 }

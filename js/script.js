@@ -17,10 +17,21 @@ buttons.forEach((button) => {
     });
 });
 
-// Hamburger menu and the navbar
-const hamburgerMenu = document.getElementById("hamburger-menu");
-const navbar = document.getElementById("navbar");
+const hamburgerMenu = document.getElementById("hamburger-icon");
+const hamburgerIcon = document.getElementById("hamburger-icon")
+const navbar = document.getElementById("hamburger-navbar");
 
 hamburgerMenu.addEventListener("click", () => {
     navbar.classList.toggle("show"); // Add/remove the "show" class
 });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+            // Hamburger menu is not visible, hide the navbar
+            navbar.classList.remove("show");
+        }
+    });
+});
+
+observer.observe(hamburgerIcon);

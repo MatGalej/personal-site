@@ -25,7 +25,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px solid red; /* TODO: DEBUG */
+    /*outline: 1px solid red; !* TODO: DEBUG *!*/
 }
 
 html {
@@ -60,16 +60,12 @@ html {
     width: 500px;
 }
 
-#hamburger-menu {
+#hamburger-menu, #hamburger-navbar, #hamburger-icon {
     display: none;
     transition: 200ms ease;
 }
 
-#navbar.show {
-    display: flex;
-}
-
-#hamburger-menu:hover {
+#hamburger-icon:hover {
     box-shadow: 2px 2px var(--offblack);
 }
 
@@ -156,18 +152,20 @@ html {
 }
 
 #opening-text h1 {
-    font-size: clamp(2rem, 10vw, 6rem);
+    font-size: clamp(3rem, 10vw, 6rem);
     font-family: "Oswald", sans-serif;
     color: var(--offwhite);
 }
 
 #opening-text h2 {
     font-style: italic;
+    font-size: clamp(8px, 5vw, 24px);
     font-family: "Raleway", sans-serif;
     color: var(--accent1);
 }
 
 #opening-text h3 {
+    font-size: clamp(6px, 5vw, 18px);
     font-family: "Raleway", sans-serif;
     color: var(--accent1);
 }
@@ -395,6 +393,10 @@ html {
 
 #nav-panel-list li > button.active {
     border: 1px solid var(--offwhite);
+}
+
+#content-panel-hamburger-menu {
+    display: none;
 }
 
 .alternate-background {

@@ -191,3 +191,12 @@
         font-size: 0.8rem;
     }
 }
+
+@media screen and (min-width: 2560px) {
+    .section-panel:not(.section-panel:last-of-type) {
+        min-height: 90vh;
+    }
+    .section-panel {
+        margin-top: 10vh;
+    }
+}

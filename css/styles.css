@@ -681,3 +681,12 @@ html {
     color: var(--offwhite);
     font-size: 12px;
 }
+
+#sitemap-link a {
+    text-decoration: none;
+    color: var(--offwhite);
+}
+
+#sitemap-link a:hover {
+    color: var(--accent6);
+}
